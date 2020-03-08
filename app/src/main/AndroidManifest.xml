@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rishi.family">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,14 +12,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GiftRecActivity"></activity>
-        <activity android:name=".DatesActivity" />
-        <activity android:name=".FamilyTreeActivity" />
-        <activity android:name=".HomeScreenActivity" />
-        <activity android:name=".SignupActivity" />
+        <activity
+            android:name=".InsertDataActivity"
+            android:parentActivityName=".HomeScreenActivity"></activity>
+        <activity
+            android:name=".GiftRecActivity"
+            android:parentActivityName=".HomeScreenActivity"></activity>
+        <activity
+            android:name=".DatesActivity"
+            android:parentActivityName=".HomeScreenActivity"></activity>
+        <activity
+            android:name=".FamilyTreeActivity"
+            android:parentActivityName=".HomeScreenActivity"></activity>
+        <activity
+            android:name=".HomeScreenActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SignupActivity"
+            android:parentActivityName=".LoginActivity"></activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashScreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

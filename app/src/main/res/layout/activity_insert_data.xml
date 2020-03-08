@@ -1,9 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity">
+    tools:context=".InsertDataActivity">
 
     <LinearLayout
         android:id="@+id/layout"
@@ -34,53 +33,78 @@
             android:textColor="@color/colorText"
             android:textColorHint="@color/colorHint" />
 
-
-        <EditText
-            android:id="@+id/edit_text_email"
+        <LinearLayout
             android:layout_width="match_parent"
+            android:weightSum="100"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_email"
-            android:drawablePadding="@dimen/drawable_padding"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:nextFocusDown="@id/edit_text_password"
-            android:textColor="@color/colorText"
-            android:textColorHint="@color/colorHint" />
+            android:orientation="horizontal">
 
+            <EditText
+                android:layout_weight="35"
+                android:id="@+id/edit_text_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:hint="DD"
+                android:nextFocusDown="@id/edit_text_password"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint" />
+
+            <EditText
+                android:layout_weight="35"
+                android:id="@+id/edit_text_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:hint="MM"
+                android:nextFocusDown="@id/edit_text_password"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint" />
+
+            <EditText
+                android:layout_weight="30"
+                android:id="@+id/edit_text_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:hint="YYYY"
+                android:nextFocusDown="@id/edit_text_password"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint" />
+        </LinearLayout>
 
         <EditText
-            android:id="@+id/edit_text_password"
+            android:id="@+id/edit_text_remindme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_password"
             android:drawablePadding="@dimen/drawable_padding"
-            android:hint="@string/password"
-            android:inputType="textPassword"
+            android:hint="Relation"
             android:nextFocusDown="@id/edit_text_phone"
             android:textColor="@color/colorText"
             android:textColorHint="@color/colorHint" />
 
         <EditText
-            android:id="@+id/edit_text_phone"
+            android:id="@+id/edit_text_ocassion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:digits="0123456789"
             android:drawableLeft="@drawable/ic_phone"
             android:drawablePadding="@dimen/drawable_padding"
-            android:hint="@string/phone"
-            android:inputType="number"
-            android:maxLength="10"
+            android:hint="Occassion"
             android:nextFocusDown="@id/button_register"
             android:textColor="@color/colorText"
             android:textColorHint="@color/colorHint" />
 
         <Button
-            android:id="@+id/button_register"
+            android:id="@+id/submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_button_register"
-            android:text="@string/register"
-            android:textAllCaps="false"
+            android:text="submit"
+            android:textAllCaps="true"
             android:textColor="@color/colorText" />
 
     </LinearLayout>
@@ -89,12 +113,8 @@
         android:id="@+id/progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layout"
         android:layout_centerHorizontal="true"
-        android:text="Login"
-        android:onClick="login"/>
+        android:layout_centerVertical="true" />
+
+
 </RelativeLayout>

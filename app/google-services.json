@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "337149359044",
+    "firebase_url": "https://family-621d7.firebaseio.com",
+    "project_id": "family-621d7",
+    "storage_bucket": "family-621d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337149359044:android:8ee50a686a7baf9b9fea91",
+        "android_client_info": {
+          "package_name": "com.rishi.family"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337149359044-72suh7iu79hpaiuk4bahqv91i74n0m08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsk8kb-_ru0y5EBF8KZLHCqiqszUD5RPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337149359044-72suh7iu79hpaiuk4bahqv91i74n0m08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

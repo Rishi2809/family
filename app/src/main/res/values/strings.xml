@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Family</string>
+    <string name="full_name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="register">Register</string>
+    <string name="input_error_name">Name required</string>
+    <string name="input_error_email">Email required</string>
+    <string name="input_error_password">Password required</string>
+    <string name="input_error_phone">Phone required</string>
+    <string name="input_error_password_length">Password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid">Enter a valid phone number</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">Enter a valid email</string>
 </resources>
