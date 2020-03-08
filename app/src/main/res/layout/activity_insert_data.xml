@@ -29,8 +29,8 @@
             android:drawableLeft="@drawable/ic_name"
             android:drawablePadding="@dimen/drawable_padding"
             android:hint="@string/full_name"
-            android:nextFocusDown="@id/edit_text_email"
-            android:textColor="@color/colorText"
+            android:nextFocusDown="@id/edit_text_date"
+            android:textColor="@color/colorAccent"
             android:textColorHint="@color/colorHint" />
 
         <LinearLayout
@@ -40,38 +40,50 @@
             android:orientation="horizontal">
 
             <EditText
-                android:layout_weight="35"
                 android:id="@+id/edit_text_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="35"
                 android:drawableLeft="@drawable/ic_email"
                 android:drawablePadding="@dimen/drawable_padding"
                 android:hint="DD"
-                android:nextFocusDown="@id/edit_text_password"
+                android:inputType="number"
+                android:maxLength="2"
+                android:digits="0123456789"
+                android:nextFocusDown="@id/edit_text_month"
+                android:singleLine="true"
                 android:textColor="@color/colorText"
                 android:textColorHint="@color/colorHint" />
 
             <EditText
-                android:layout_weight="35"
                 android:id="@+id/edit_text_month"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:inputType="number"
+                android:maxLength="2"
+                android:digits="0123456789"
                 android:drawableLeft="@drawable/ic_email"
                 android:drawablePadding="@dimen/drawable_padding"
                 android:hint="MM"
-                android:nextFocusDown="@id/edit_text_password"
+                android:nextFocusDown="@id/edit_text_year"
+                android:singleLine="true"
                 android:textColor="@color/colorText"
                 android:textColorHint="@color/colorHint" />
 
             <EditText
-                android:layout_weight="30"
                 android:id="@+id/edit_text_year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:inputType="number"
+                android:maxLength="4"
+                android:digits="0123456789"
                 android:drawableLeft="@drawable/ic_email"
                 android:drawablePadding="@dimen/drawable_padding"
                 android:hint="YYYY"
                 android:nextFocusDown="@id/edit_text_password"
+                android:singleLine="true"
                 android:textColor="@color/colorText"
                 android:textColorHint="@color/colorHint" />
         </LinearLayout>

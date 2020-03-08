@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -41,7 +42,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         con = getApplicationContext();
         firebaseApp.initializeApp(con);
         mAuth = FirebaseAuth.getInstance();
-getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         findViewById(R.id.button_register).setOnClickListener(this);
     }
 

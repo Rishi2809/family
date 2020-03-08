@@ -1,17 +1,17 @@
 package com.rishi.family;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -21,7 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class InsertDataActivity extends AppCompatActivity {
-    EditText et1, et2, et3, et4,et5,et6;
+    EditText et1, et2, et3, et4, et5, et6;
     Button b1, b2;
     Context con;
     String uid;
@@ -39,10 +39,11 @@ public class InsertDataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_insert_data);
         uid = getIntent().getStringExtra("uid");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         Log.d("InsertDataActivity", uid);
         et1 = findViewById(R.id.edit_text_name);
         et2 = findViewById(R.id.edit_text_date);
-        et5= findViewById(R.id.edit_text_month);
+        et5 = findViewById(R.id.edit_text_month);
         et6 = findViewById(R.id.edit_text_year);
         et3 = findViewById(R.id.edit_text_remindme);
         et4 = findViewById(R.id.edit_text_ocassion);
@@ -62,7 +63,7 @@ public class InsertDataActivity extends AppCompatActivity {
 
     private void addDetails() {
         String name = et1.getText().toString();
-        String date = et2.getText().toString()+"/"+et5.getText().toString()+"/"+et6.getText().toString();
+        String date = et2.getText().toString() + "/" + et5.getText().toString() + "/" + et6.getText().toString();
         String remindme = et3.getText().toString();
         String occasion = et4.getText().toString();
 
@@ -80,7 +81,6 @@ public class InsertDataActivity extends AppCompatActivity {
 
 
     }
-
 
 
 }

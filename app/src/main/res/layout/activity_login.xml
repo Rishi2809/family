@@ -65,6 +65,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="signup"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/bg_button_register"
         android:textColor="@color/colorText"
         android:onClick="signup"/>
