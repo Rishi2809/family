@@ -63,7 +63,7 @@ public class InsertDataActivity extends AppCompatActivity {
 
     private void addDetails() {
         String name = et1.getText().toString();
-        String date = et2.getText().toString() + "/" + et5.getText().toString() + "/" + et6.getText().toString();
+        String date = et5.getText().toString() + "/" + et2.getText().toString() + "/" + et6.getText().toString();
         String remindme = et3.getText().toString();
         String occasion = et4.getText().toString();
 

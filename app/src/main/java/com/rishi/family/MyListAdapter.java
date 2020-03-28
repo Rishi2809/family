@@ -1,5 +1,7 @@
 package com.rishi.family;
 
+import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,15 +11,15 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
+import java.util.ArrayList;
+
 
 public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder>{
-   private List<Dates> plist;
+   private ArrayList<Dates> plist;
 
     // RecyclerView recyclerView;
 
-
-    public MyListAdapter(List<Dates> plist) {
+    public MyListAdapter(ArrayList<Dates> plist) {
         this.plist = plist;
     }
 
@@ -31,15 +33,16 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        final Dates Dates = plist.get(position);
-        holder.name.setText(Dates.getName());
-        holder.date.setText(Dates.getDob());
-        holder.age.setText(Dates.getFrequency());
-        holder.occassion.setText(Dates.getOccassion());
+        final Dates dates = plist.get(position);
+        holder.name.setText(dates.getName());
+        holder.date.setText(Html.fromHtml(dates.getSBDay()));
+        holder.age.setText(dates.getFrequency());
+        holder.occassion.setText(dates.getOccassion());
+        Log.d("items",dates.getDob()+dates.getName()+dates.getOccassion());
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(),"click on item: "+Dates.getName(),Toast.LENGTH_LONG).show();
+                Toast.makeText(view.getContext(),"click on item: "+dates.getName(),Toast.LENGTH_LONG).show();
             }
         });
     }

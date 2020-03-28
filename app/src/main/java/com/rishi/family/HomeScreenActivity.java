@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,6 +29,7 @@ public class HomeScreenActivity extends AppCompatActivity {
 
 
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -43,6 +43,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         }
         return true;
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -73,7 +74,9 @@ public class HomeScreenActivity extends AppCompatActivity {
     }
 
     public void familytree(View view) {
-        Toast.makeText(this, "Family Tree Coming Soon", Toast.LENGTH_SHORT).show();
+        //      Toast.makeText(this, "Family Tree Coming Soon", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, FamilyTreeActivity.class);
+        startActivity(intent);
     }
 
     public void gifts(View view) {

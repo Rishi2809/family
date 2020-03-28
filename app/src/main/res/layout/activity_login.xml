@@ -28,10 +28,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_email"
+            android:maxLines="1"
             android:drawablePadding="@dimen/drawable_padding"
             android:hint="@string/email"
             android:nextFocusDown="@id/edit_text_password"
-            android:textColor="@color/colorText"
+            android:textColor="@color/colorAccent"
             android:textColorHint="@color/colorHint" />
 
 
@@ -43,7 +44,8 @@
             android:drawableLeft="@drawable/ic_password"
             android:drawablePadding="@dimen/drawable_padding"
             android:hint="@string/password"
-            android:textColor="@color/colorText"
+            android:textColor="@color/colorAccent"
+            android:maxLines="1"
             android:textColorHint="@color/colorHint" />
 
         <Button
