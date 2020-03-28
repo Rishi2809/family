@@ -28,10 +28,10 @@ loadAlert();
     }
 
     private void loadAlert() {
-        builder.setMessage("This website works best on pc/laptop. Do you still want to visit?") .setTitle("Just A Tip");
+        builder.setMessage("") .setTitle("Just A Tip");
 
         //Setting message manually and performing action on button click
-        builder.setMessage("Do you want to close this application ?")
+        builder.setMessage("This website works best on pc/laptop. Do you still want to visit?")
                 .setCancelable(false)
                 .setPositiveButton("Visit", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
