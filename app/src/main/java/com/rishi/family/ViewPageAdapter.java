@@ -10,8 +10,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 
 public class ViewPageAdapter extends PagerAdapter {
+    private ArrayList<Dates> plist;
 
     private Context context;
     private LayoutInflater layoutInflater;

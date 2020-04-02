@@ -25,7 +25,6 @@ public class InsertDataActivity extends AppCompatActivity {
     Button b1, b2;
     Context con;
     String uid;
-    String dob;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef;
     ProgressBar progressBar;
