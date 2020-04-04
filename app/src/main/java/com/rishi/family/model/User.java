@@ -1,4 +1,4 @@
-package com.rishi.family;
+package com.rishi.family.model;
 
 public class User {
     public String name, email, phone;

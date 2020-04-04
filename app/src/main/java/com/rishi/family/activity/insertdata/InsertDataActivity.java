@@ -1,4 +1,4 @@
-package com.rishi.family;
+package com.rishi.family.activity.insertdata;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -19,6 +19,7 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.rishi.family.R;
 
 public class InsertDataActivity extends AppCompatActivity {
     EditText et1, et2, et3, et4, et5, et6;

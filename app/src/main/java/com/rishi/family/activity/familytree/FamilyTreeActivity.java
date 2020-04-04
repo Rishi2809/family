@@ -1,4 +1,4 @@
-package com.rishi.family;
+package com.rishi.family.activity.familytree;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.rishi.family.R;
 
 public class FamilyTreeActivity extends AppCompatActivity {
 WebView webView;

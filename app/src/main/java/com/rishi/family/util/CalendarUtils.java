@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.rishi.family;
+package com.rishi.family.util;
 
 import android.annotation.SuppressLint;
 

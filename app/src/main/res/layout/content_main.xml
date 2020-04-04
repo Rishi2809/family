@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".DatesActivity">
+    tools:context=".activity.displaydata.DatesActivity">
 
 
     <androidx.cardview.widget.CardView
@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        app:cardBackgroundColor="#7C7B7B"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#7C7B7B"
         app:cardCornerRadius="20dp">
 
         <RelativeLayout
@@ -44,7 +44,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/name"
                 android:layout_marginLeft="20dp"
-
                 android:fontFamily="@font/arizonia"
                 android:hint="mm/dd/yyyy"
                 android:textColor="#000000"
@@ -69,7 +68,6 @@
                 android:layout_below="@+id/age"
                 android:fontFamily="@font/arizonia"
                 android:hint="Occassion"
-
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="22sp" />

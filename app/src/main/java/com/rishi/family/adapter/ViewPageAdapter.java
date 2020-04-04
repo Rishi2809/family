@@ -1,4 +1,4 @@
-package com.rishi.family;
+package com.rishi.family.adapter;
 
 
 import android.content.Context;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.rishi.family.R;
+import com.rishi.family.model.Dates;
 
 import java.util.ArrayList;
 
