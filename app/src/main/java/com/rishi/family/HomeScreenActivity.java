@@ -80,7 +80,9 @@ public class HomeScreenActivity extends AppCompatActivity {
     }
 
     public void gifts(View view) {
-        Toast.makeText(this, "Gift Recommendation Coming Soon", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Gift Recommendation Coming Soon", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, GiftRecActivity.class);
+        startActivity(intent);
     }
 
 }
