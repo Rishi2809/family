@@ -1,4 +1,4 @@
-package com.rishi.family;
+package com.rishi.family.activity.signup;
 
 
 import android.content.Context;
@@ -20,6 +20,10 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
+import com.rishi.family.R;
+import com.rishi.family.activity.homescreen.HomeScreenActivity;
+import com.rishi.family.activity.login.LoginActivity;
+import com.rishi.family.model.User;
 
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
 

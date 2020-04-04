@@ -1,4 +1,4 @@
-package com.rishi.family;
+package com.rishi.family.activity.homescreen;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.rishi.family.activity.AutoSmsScheduler;
+import com.rishi.family.activity.displaydata.DatesActivity;
+import com.rishi.family.activity.familytree.FamilyTreeActivity;
+import com.rishi.family.activity.insertdata.InsertDataActivity;
+import com.rishi.family.activity.login.LoginActivity;
+import com.rishi.family.R;
+import com.rishi.family.adapter.ViewPageAdapter;
 
 public class HomeScreenActivity extends AppCompatActivity {
     String uid;
@@ -80,7 +87,9 @@ public class HomeScreenActivity extends AppCompatActivity {
     }
 
     public void gifts(View view) {
-        Toast.makeText(this, "Gift Recommendation Coming Soon", Toast.LENGTH_SHORT).show();
+   //     Toast.makeText(this, "Gift Recommendation Coming Soon", Toast.LENGTH_SHORT).show();
+   Intent intent = new Intent(this, AutoSmsScheduler.class);
+   startActivity(intent);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.rishi.family;
+package com.rishi.family.activity.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +19,9 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.rishi.family.R;
+import com.rishi.family.activity.signup.SignupActivity;
+import com.rishi.family.activity.homescreen.HomeScreenActivity;
 
 public class LoginActivity extends AppCompatActivity {
     EditText emailId, password;

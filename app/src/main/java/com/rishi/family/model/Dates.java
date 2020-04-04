@@ -1,4 +1,4 @@
-package com.rishi.family;
+package com.rishi.family.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

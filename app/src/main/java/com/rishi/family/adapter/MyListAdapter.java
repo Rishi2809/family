@@ -1,4 +1,4 @@
-package com.rishi.family;
+package com.rishi.family.adapter;
 
 import android.text.Html;
 import android.util.Log;
@@ -10,6 +10,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.rishi.family.R;
+import com.rishi.family.model.Dates;
 
 import java.util.ArrayList;
 
